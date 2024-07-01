@@ -1,0 +1,28 @@
+{
+  "name": "workshop",
+  "version": "0.0.1-SNAPSHOT",
+  "private": true,
+  "description": "Workshop on Securing web applications",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.ts"
+  },
+  "config": {
+    "default_environment": "prod"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-requests-logger": "^4.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9"
+  },
+  "engines": {
+    "node": ">=18.18.2"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}
