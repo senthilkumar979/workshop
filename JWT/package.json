@@ -11,6 +11,7 @@
     "default_environment": "prod"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-requests-logger": "^4.0.0",
     "jsonwebtoken": "^9.0.2",
