@@ -1,5 +1,5 @@
 async function getAccountDetails(token) {
-    await fetch('http://localhost:8080/api/myaccount', {
+    await fetch('http://localhost:9050/api/myaccount', {
         headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('token')}`
         }
@@ -17,7 +17,7 @@ async function login(event) {
     if (email.value && password.value) {
         sessionStorage.setItem('email', email.value);
 
-        await fetch('http://localhost:8080/api/authenticate', {
+        await fetch('http://localhost:9050/api/authenticate', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -81,7 +81,7 @@ function listenToOtpChange() {
 
 async function submitOtp(otp) {
     const email = sessionStorage.getItem('email');
-    await fetch('http://localhost:8080/api/verify-otp', {
+    await fetch('http://localhost:9050/api/verify-otp', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"

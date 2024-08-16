@@ -20,7 +20,7 @@ app.use(express.json());
 
 require("./authenticate")(app);
 
-const PORT = 8080;
+const PORT = 9050;
 const HOST = "localhost";
 
 app.listen(PORT, HOST, () => {

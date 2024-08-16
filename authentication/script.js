@@ -3,7 +3,7 @@ async function login(event) {
     const password = document.getElementById('password');
     event.preventDefault();
     if (email.value && password.value) {
-        await fetch('http://localhost:8080/api/authenticate', {
+        await fetch('http://localhost:9050/api/authenticate', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
